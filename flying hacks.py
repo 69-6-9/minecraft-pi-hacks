@@ -16,8 +16,8 @@ oakLeaves = 18
 
 #code
 while True:
-    x, y, z = mc.player.getPos()  # player position (x, y, z)
-    block_beneath = mc.getBlock(x, y-1, z)  # block ID
+    x, y, z = mc.player.getPos()
+    block_beneath = mc.getBlock(x, y-1, z)
 
     if block_beneath == air:
         mc.setBlock(x, y-1, z, oakLeaves)
